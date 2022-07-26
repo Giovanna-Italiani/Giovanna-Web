@@ -1,0 +1,89 @@
+/* Habilidades */
+
+.habilidades-bg {
+  background: #642764;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.habilidades-bg h2 {
+  grid-column: 2;
+  text-align: center;
+  padding: 2rem;
+} 
+
+.habilidades {
+  grid-column: 2;
+}
+
+.habilidades-1 {
+  display: flex;
+  padding: 1.5rem;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+
+.habilidades-2 {
+  padding: 1.5rem;
+  display: flex;  
+  justify-content: space-around;
+  margin-top: 6rem;
+}
+
+.habilidades-1 li, 
+.habilidades-2 li {
+  background: #4b204b;
+  border-radius: 3px;
+  padding: .5rem;
+  box-shadow: 5px 5px 15px 0px rgba(44, 44, 44, 1);
+}
+
+.habilidades-1 li:hover, 
+.habilidades-2 li:hover {
+  background: #936;
+}
+
+.habilidades-1 img,
+.habilidades-2 img {
+  width: 5rem;
+  height: 5rem;
+}
+
+.picture {
+  grid-column: 1;
+  align-self: flex-start;
+  justify-self: flex-start;
+  margin-left: 0;
+}
+
+.picture img {
+  height: 100vh;
+  width: 100vh; 
+}
+
+/* responsivo */
+@media (max-width: 920px) {
+  .picture {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .habilidades-bg {
+    grid-template-columns: 1fr;
+    height: 80vh;
+  } 
+  .habilidades {
+    grid-column: 1 / -1;
+    margin: auto;
+  }
+  .habilidades-1 img,
+  .habilidades-2 img {
+   width: 3.5rem;
+   height: 3.5rem;
+  }
+   .habilidades-2 {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+   }
+}

@@ -1,0 +1,82 @@
+/* Header */
+.header-bg {
+  background: #642764;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.header p {
+  font-family: "Dancing Script";
+  font-size: 2.25rem;
+  margin-left: 4rem;
+}
+
+.header-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-right: 20px;
+}
+
+.header-menu a {
+  display: inline-block;
+  padding: 16px 0px;
+  position: relative;
+}
+
+.header-menu a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0px;
+  background: #fff;
+  margin-top: 4px;
+  transition: 0.3s;
+  position: absolute;
+}
+
+.header-menu a:hover::after{
+  width: 100%;
+}
+
+@media (max-width: 700px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .header p {
+    font-size: 1.5rem;
+    margin-left: 2rem;
+  }
+  .header-menu a::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0px;
+    background: #fff;
+    margin-top: 4px;
+    transition: 0.3s;
+    position: absolute;
+  }
+  .header-menu a::after {
+   content: "";
+   display: block;
+   height: 2px;
+   width: 100%;
+   background: #4b204b;
+   margin-top: 4px;
+   transition: 0.3s;
+   position: absolute;
+  }
+}

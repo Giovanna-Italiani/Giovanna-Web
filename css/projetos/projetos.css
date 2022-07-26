@@ -1,0 +1,73 @@
+/* Projetos */
+
+.projetos-bg {
+ display: grid;
+ grid-template-columns: repeat(1, 1fr);
+}
+
+.col-wide {
+  grid-column: 1 / -1;
+}
+
+.col-wide h2 {
+  font-size: 1.5rem;
+  margin-top: 2rem; 
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.projetos-link ul {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center; 
+}
+
+.projetos-link li {
+  background: #642764;
+  padding: 1rem;
+  width: 260px;
+  margin-bottom: 2rem;
+  border-radius: 4px;
+  box-shadow: 5px 5px 15px 0px rgba(44, 44, 44, 1);
+}
+
+.projetos-link img {
+  border-radius: 4px;
+}
+
+.projetos-link h3 {
+  font-size: 1.125rem;
+  margin-top: .5rem;
+  margin-bottom: .5rem;  
+  font-weight: normal;
+}
+
+.projetos-link button {
+  font-family: "Poppins";
+  padding: .5rem;
+  background: #936;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.projetos-link button:hover {
+  background: #4b204b;
+  letter-spacing: .125rem;
+  cursor: pointer;
+}
+
+/* Responsivo */
+@media(max-width: 950px) {
+  .projetos-link {
+    overflow-x: auto;
+  }
+  .projetos-link li {
+    margin: .5rem;
+  }
+  .projetos-link a {
+    height: 500vh;
+  }
+}

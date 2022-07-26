@@ -1,0 +1,31 @@
+/* Footer */
+
+.footer-bg {
+  max-width: 100%;
+  height: 25vh;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 10px;
+  margin-top: 12.5vh;
+}
+
+.footer h3 {
+  margin-bottom: 2rem;
+}
+
+.footer-links a {
+  background: #936;
+  padding: .5rem;
+  margin: .5rem;
+  border-radius: 4px;
+}
+
+.footer-links a:hover {
+  letter-spacing: .25rem;
+  background: #642764;
+}
+

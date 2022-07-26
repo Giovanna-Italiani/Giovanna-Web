@@ -1,0 +1,69 @@
+/* Início */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@500&display=swap');
+
+.inicio-bg {
+  height: 100vh !important;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.inicio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  animation: slideDown 3s forwards;
+  line-height: 3rem;
+}
+
+@keyframes slideDown {
+  from{
+    opacity: -1;
+    transform: translateY(-20px);
+  }
+  to {
+   opacity: 1;
+   transform: translateY(20px);
+  }
+}
+
+.inicio h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  font-family: "Cormorant SC";
+  font-weight: normal;
+}
+
+.inicio h1::after {
+ content: "|";
+ opacity: 1;
+ animation: piscar .7s infinite;
+}
+
+@keyframes piscar {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.inicio h2 {
+  font-weight: normal;
+}
+
+/* Responsivo */
+@media(max-width: 520px) {
+  .inicio h1 {
+    margin-bottom: 2rem;
+    font-family: "Pacifico";
+  }
+  .inicio h1::after {
+    display: none;
+  }
+  .inicio h2 {
+    font-size: 1.25rem;
+  }
+}
