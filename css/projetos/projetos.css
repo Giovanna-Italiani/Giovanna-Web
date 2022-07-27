@@ -70,4 +70,7 @@
   .projetos-link a {
     height: 500vh;
   }
+  .projetos-link h3 {
+    font-size: .875rem;
+  }
 }

@@ -60,9 +60,6 @@
     margin-bottom: 2rem;
     font-family: "Pacifico";
   }
-  .inicio h1::after {
-    display: none;
-  }
   .inicio h2 {
     font-size: 1.25rem;
   }

@@ -2,6 +2,11 @@ export default function outsideClick(element, events, callback) {
   const html = document.documentElement;
   const outside = 'data-outside';
 
+  const menuButton = document.querySelector("[data-menu='button']");
+  const menuList = document.querySelector("[data-menu='list']");
+  const eventos = ['click', 'touchstart'];
+  console.log(menuList);
+
   if (!element.hasAttribute(outside)) {
     events.forEach((userEvent) => {
       setTimeout(() => html.addEventListener(userEvent, handleOutsideClick));
@@ -16,5 +21,18 @@ export default function outsideClick(element, events, callback) {
       });
       callback();
     }
+  }
+
+  if (menuButton) {
+    function openMenu(event) {
+      outsideClick(menuList, eventos, () => {
+        menuButton.classList.toggle('active');
+        menuList.classList.toggle('active');
+      });
+    }
+
+    eventos.forEach((evento) => {
+      menuButton.addEventListener(evento, openMenu);
+    });
   }
 }
