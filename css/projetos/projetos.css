@@ -61,16 +61,26 @@
 
 /* Responsivo */
 @media(max-width: 950px) {
+  .projetos-bg {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
   .projetos-link {
-    overflow-x: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    overflow-x: scroll;
   }
   .projetos-link li {
-    margin: .5rem;
-  }
-  .projetos-link a {
-    height: 500vh;
+    margin: 1rem;
   }
   .projetos-link h3 {
-    font-size: .875rem;
+    font-size: .975rem;
+  }
+  .projetos-link button {
+    font-size: .675rem;
+  }
+  .projetos-bg.container {
+    height: 80vh;
   }
 }
